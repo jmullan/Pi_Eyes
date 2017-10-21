@@ -1,6 +1,8 @@
-import pi3d
 import math
-from svg.path import Path, parse_path
+
+import pi3d
+from svg.path import parse_path
+
 
 # Get artboard bounds (to use Illustrator terminology) from SVG DOM tree:
 def getViewBox(root):
@@ -221,4 +223,3 @@ def zangle(points, r1):
 	angle = math.atan2(r2, z) * 180.0 / math.pi
 
 	return (z, angle)
-

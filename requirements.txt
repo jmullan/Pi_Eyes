@@ -1,0 +1,6 @@
+numpy
+pi3d
+svg.path
+adafruit-ads1x15
+RPi.GPIO
+pillow
