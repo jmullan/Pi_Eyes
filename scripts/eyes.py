@@ -62,7 +62,6 @@ if DISPLAY.width <= (DISPLAY.height * 2):
 else:
     eyeRadius = DISPLAY.height * 2 / 5
     eyePosition = DISPLAY.height / 2
-
 # A 2D camera is used, mostly to allow for pixel-accurate eye placement,
 # but also because perspective isn't really helpful or needed here, and
 # also this allows eyelids to be handled somewhat easily as 2D planes.
@@ -172,6 +171,7 @@ rightUpperEyelid.positionX(-eyePosition)
 rightUpperEyelid.positionZ(-eyeRadius - 42)
 rightLowerEyelid.positionX(-eyePosition)
 rightLowerEyelid.positionZ(-eyeRadius - 42)
+print eyeRadius, eyePosition, -eyeRadius - 42, irisZ, "\r"
 
 leftEye.positionX(eyePosition)
 leftIris.positionX(eyePosition)
